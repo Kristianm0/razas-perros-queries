@@ -1,0 +1,6 @@
+--- INSERT 
+-- Para insertar valores en la tabla raza
+INSERT INTO raza (nombre_raza, id_raza, color, comportamiento, orige)
+VALUES ('Doberman', 1, 'Negro', 'Muy bueno', 'Alemania');
+
+-- Con INSERT INTO le metemos datos a la tabla, y ponemos el nombre despues de esos comandos de la tabla que querramos, despues dentro de parentesis colocamos sus atributos los cuales vayamos a llenar. Despues en otra linea comezamos con VALUES y entre parentesis y con sus respectivos formatos, si es texto va entre comillas '' o si es numerico o con decimal etc.

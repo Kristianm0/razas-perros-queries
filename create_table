@@ -1,0 +1,23 @@
+--- CREATE 
+-- Para crear la tabla de raza necesitamos el siguente comando
+CREATE TABLE raza (
+		nombre_raza varchar(30),
+		id_raza integer, 
+		color varchar(30),
+		comportamiento text,
+		origen text
+);
+
+-- Creamos la entidad (tabla) con sus atributos (rows), osea tabla: raza, atributo: nombre_raza con su tipo de datos (varchar)
+
+
+--- CREATE 
+-- Para crear la tabla de perros 
+CREATE TABLE perros(
+		id_perro integer AUTO_INCREMENT, 
+		nombre_perro varchar(255) NOT NULL,
+		edad INTEGER,
+		id_raza integer 
+);
+
+-- Igual creamos una entidad y sus atributos. perros como entidad y uno de sus atributos id_perro y tipo de valor integer AUTO_INCREMENT.

@@ -1,0 +1,12 @@
+--- ALTER 
+ALTER TABLE raza
+ADD fecha_descubrimiento date;
+
+-- Ponemos el comando ALTER para modificar, y el damos el nombre de la tabla donde se va a modificar. Despues le damos la accion sea ADD para anañir, DELETE para eliminar etc.
+
+--- ALTER 
+--- Drop para eliminar el row que creamos.
+ALTER TABLE raza 
+DROP COLUMN fecha_descubrimiento;
+
+-- Ahora Hacemos DROP que se utiliza mas para eliminar columnas enteras.

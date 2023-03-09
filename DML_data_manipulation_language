@@ -1,0 +1,18 @@
+INSERT INTO perros(id_perro, nombre_perro, edad, id_raza)
+VALUES(3,'Doof', 200, 3);
+-- Insertamos unos datos de prueba.
+
+
+--- UPDATE
+UPDATE perros 
+SET nombre_perro = 'Doof2'
+-- Ponemos lo el valor que vamos a actualizar.
+WHERE id_perro = 3;
+-- Le decimos donde lo va a actualizar, en que tabla y con que valor, le decimos donde lo hara.
+
+--- DELETE
+DELETE FROM perros 
+-- Ponemos en que tabla sera.
+WHERE id_perro = 3
+
+-- Usamos DELETE para de la tabla perros borrar el valor del ID donde dice 3, y borramos la fila completa.

@@ -1,0 +1,72 @@
+USE raza_perros
+-- Le decimos que base de datos vamos a usar.
+
+SELECT *
+FROM perros
+-- selecionamos todos los datos * con la estrellita. 
+-- Le decimos de donde con el FROM.
+
+SELECT id_perro AS ceduala_perruna, nombre_perro AS clientes
+FROM perros 
+-- Le decimoos que nos va a traer pero que le cambie el nombre con AS.
+-- Con el FROM especificamos.
+
+SELECT COUNT(*) AS cantidad_perros
+FROM perros
+-- Le decimos que nos cuente las filas que hay en la base de datos de perros
+
+SELECT COUNT(id_perro) AS cantidad_perros, COUNT(id_raza) AS cantidad_razas
+FROM perros
+-- Treamos los datos del id de perro para contar cuantos perros hay con COUNT, y hacemos lo mismo con los id de raza.
+
+SELECT *
+FROM perros 
+WHERE id_perro = 1
+-- Traemos todo los datos porque igual se van a filtrar con el WHERE donde le decimos que, donde sea id_perro igual a 1 que lo traiga.
+
+SELECT *
+FROM perros 
+WHERE edad > 10
+-- Le decimos que nos traiga todo los datos de perros pero donde la casilla edad sea mayor a 10.
+
+SELECT *
+FROM perros 
+WHERE edad <= 10
+-- Trae todo los datos de perros, pero donde la casilla edad sea menor o igual a 10.
+
+SELECT nombre_perro AS clientes, COUNT(id_raza) AS cantidad_raza_perros, edad
+FROM perros 
+WHERE edad <= 10
+-- Le decimos que traiga los nombre de perros como clientes. Que cuente las razas de perros las cuales se traigan, y que traiga edad.
+-- Le decimo donde lo va a buscar.
+-- Le decimos que solo traiga la casilla donde edad sea mayor o igual a 10. 
+-- El COUNT solo cuenta las casillas que son mayores a 10 porque asi lo especifiamos.
+
+SELECT id_perro, nombre_perro
+FROM perros 
+ORDER BY nombre_perro DESC
+-- Pedimos los datos con SELECT. Especificamod donde con FROM. Lo ordenamos de manera desendiente con ORDER BY y DESC.
+
+SELECT id_perro, nombre_perro, edad, id_raza
+FROM perros
+ORDER BY edad ASC
+-- Pedimos cada dato para poder ordenarlos sin problemas, le decimos de donde lo va a traer con el FROM y lo ordenamos con ORDER BY con edad y sera de manera ascendente osea ASC.
+
+SELECT *, edad
+FROM perros 
+ORDER BY edad ASC
+-- Tambien podemos pedir todo y poner el la columna con la que vamos a order todo para poder especificarlo en el ORDER BY.
+
+SELECT *, edad AS tiempo_vida_perro
+FROM perros 
+ORDER BY tiempo_vida_perro DESC
+-- Lo mismo, seleccionamos todo, le decimos que tambien lo haga la columna con la cual ordenaremos todo, y le decimos en donde lo busque con FROM.
+-- Le cambiamos el nombre a lo que vaya a traer, y cuando lo ordenemos le decimo que lo haga por el nombre que cambiamos, ORDER BY ---nombre-- DESC. Y igual asi funciona.
+
+SELECT *, edad, nombre_perro AS clientes
+FROM perros 
+WHERE edad <= 10
+ORDER BY edad ASC
+-- Aqui selecionamos todo y especificamos campos en especifico. Le decimos donde con el FROM. 
+-- pasamos un filtro con WHERE que donde edad sea igual menor o igual 10.
+-- Lo ordenamos de manera asendente por la edad.

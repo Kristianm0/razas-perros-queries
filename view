@@ -1,0 +1,6 @@
+--- VIEW 
+CREATE VIEW `clientes` AS
+SELECT nomnbre_perro
+FROM perros;
+
+-- Ponemos el comando CREATE VIEW y le damos un nombre con el cual se podra llamar la VIEW que seria clientes, y despues le ponemos el comando para traer los datos que es SELECT que llamariamos a la columna perro_nombre de la tabla perros, ya si quieres le pones la condicion o no. Y para usar las view vamos a la parte de view y de selecionar rows.
